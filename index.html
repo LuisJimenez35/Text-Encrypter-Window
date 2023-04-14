@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="contents/Favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+
+    <title>Alura Text Encrypter</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html"><img src="contents/Logo_Alura.svg"></a>
+    </header>
+    <main class="main">
+
+        <section class="Sec_1">
+            <textarea placeholder="Ingrese el texto aqui" id='textarea1'></textarea>
+
+            <article class="warning_block">
+                <img src="contents/Admiration_Simbol.svg" />
+                <p>Solo letras minusculas y sin acentos</p>
+            </article>
+
+            <div class="container-buttons">
+                <button class="button button--secondary b2" id="decryptButton"
+                    onclick="handleClick('decrypt')">Desencriptar</button>
+                <button class="button b1" id="encryptButton" onclick="handleClick('secret')">Encriptar</button>
+            </div>
+        </section>
+
+        <section class="Sec_2">
+            <div class="container-textarea">
+
+                <article class="warning" id="warningSection">
+                    <img src="contents/Person_Figure.svg" alt="">
+                    <p>Ningun mensaje fue encontrado</p>
+                    <span>Ingresa un texto de desees encriptar o desencriptar.</span>
+                </article>
+
+                <div class="resultados novisible" id="resultsSection">
+                    <textarea id="textarea2"></textarea>
+                    <button class="button" onclick="copyText()" id="copyButton">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
