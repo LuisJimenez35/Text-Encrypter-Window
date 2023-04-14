@@ -1,3 +1,7 @@
+name: DEPLOY DEV
+permissions:
+  contents: write
+  
 on: push
 
 jobs:
