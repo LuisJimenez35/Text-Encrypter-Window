@@ -1,0 +1,17 @@
+on: push
+
+jobs:
+  deploy-dev:
+    environment: dev
+    name: deploy dev
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: mkdir dist && cp -r contents index.css index.js index.html dist/
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist
