@@ -23,4 +23,8 @@ The letter "u" is converted to "ufat".
 
 - The page must have fields for inserting the text to be encrypted or decrypted, and the user must be able to choose between the two options.
 - The result should be displayed on the screen.
-- A button to copy the encrypted/decrypted text to the transfer section, i.e. with the same functionality as ctrl+C or the "copy" option in the applications menu.
+- A button to copy the encrypted/decrypted text to the transfer section, i.e. with the same functionality as ctrl+C or the "copy" option in the applications menu
+## 💻Software Available:
+- HTML5
+- CSS3
+- Java Script
